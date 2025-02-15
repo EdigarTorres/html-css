@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Paciente</title>
+    <link rel="stylesheet" href="assets/css/stylepaciente.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/stylecontato.css">
+</head>
+<body>
+    <header class="header-verde">
+        <img src="assets/logo.jpg" width="120px" alt=""> <h1>Bem-vindo ao Saude+</h1>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Início</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li><a href="paciente.html">Área do Paciente</a></li> 
+                <li><a href="medico.html">Área do Médico</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container main">
+    <h2>Cadastro e Anamnese</h2>
+    <form method="POST">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div class="campo">
+                <label>Nome Completo: <input type="text" name="nome" required class="grande"></label>
+            </div>
+            <div class="campo"><label>CPF: <input type="text" name="cpf" required></label></div>
+            <div class="campo"><label>Data de Nascimento: <input type="date" name="data_nascimento" required></label></div>
+
+
+            <div class="campo"><label>Gênero:</label>
+            <div class="radio"><input type="radio" name="genero" value="Masculino"> Masculino</div>
+            <div class="radio"><input type="radio" name="genero" value="Feminino"> Feminino</div>
+            <div class="radio"><input type="radio" name="genero" value="Outro"> Outro</div>
+            <div class="radio"><input type="radio" name="genero" value="Prefiro não informar"> Prefiro não informar</div></div>
+            
+            
+            <div class="campo"><label>Endereço: <input type="text" name="endereco"></label></div>
+            <div class="campo"><label>Telefone: <input type="tel" name="telefone" required></label></div>
+            <div class="campo"><label>E-mail: <input type="email" name="email" required></label></div>
+        </fieldset>
+        <fieldset>
+            <legend>Contato de Emergência</legend>
+            <div class="campo"><label>Nome: <input type="text" name="contato_nome" required></label></div>
+            <div class="campo"><label>Telefone: <input type="tel" name="contato_telefone" required></label></div>
+
+            <div class="campo"><label>Relação: <input type="text" name="contato_relacao"></label></div>
+        </fieldset>
+        <fieldset>
+            <legend>Histórico Médico</legend>
+            <div class="campo"><label for="medicacao">Faz uso contínuo de alguma medicação?
+                <input type="text" name="medicacao" id="medicacao" placeholder="Se sim, qual medicação?" />
+            </label></div>
+            <div class="campo"><label for="cirurgia">Já passou por alguma cirurgia?
+                <input type="text" name="cirurgia" id="cirurgia" placeholder="Se sim, qual cirurgia?" />
+            </label></div>
+            <div class="campo"><label for="alergia">Possui alguma alergia?
+                <input type="text" name="alergia" id="alergia" placeholder="Se sim, qual alergia?" />
+            </label></div>
+            <div class="campo"><label for="alergia_medicacao">Possui alergia a alguma medicação?
+                <input type="text" name="alergia_medicacao" id="alergia_medicacao"
+                    placeholder="Se sim, qual medicação?" />
+            </label></div>
+        </fieldset>
+        <fieldset>
+            <legend>Quiz de Saúde</legend>
+            <div class="campo"><label>Com que frequência você pratica exercícios físicos?</label>
+                <div class="radio"><input type="radio" name="exercicios" value="Diariamente"> Diariamente</div>
+                <div class="radio"><input type="radio" name="exercicios" value="3-4x por semana"> 3-4 vezes por semana</div>
+                <div class="radio"> <input type="radio" name="exercicios" value="1-2x por semana"> 1-2 vezes por semana</div>
+                <div class="radio"><input type="radio" name="exercicios" value="Raramente"> Raramente</div>
+                <div class="radio"><input type="radio" name="exercicios" value="Nunca"> Nunca</div></div>
+           
+            
+            <div class="campo"><label>Quantas horas de sono você tem por noite, em média?</label>
+                <div class="radio"><input type="radio" name="sono" value="Menos de 5h"> Menos de 5 horas</div>
+                <div class="radio"> <input type="radio" name="sono" value="5-6h"> 5-6 horas</div>
+                <div class="radio"><input type="radio" name="sono" value="7-8h"> 7-8 horas</div>
+                <div class="radio"><input type="radio" name="sono" value="Mais de 8h"> Mais de 8 horas</div></div>
+            
+            
+            <div class="campo"><label>Você fuma?</label>
+                <div class="radio"><input type="radio" name="fuma" value="Sim"> Sim</div>
+                <div class="radio"><input type="radio" name="fuma" value="Não"> Não</div>
+                <div class="radio"><input type="radio" name="fuma" value="Ocasionalmente"> Ocasionalmente</div>
+        </div>
+            
+            <div class="campo"><label>Com que frequência você consome bebidas alcoólicas?</label>
+                <div class="radio"><input type="radio" name="alcool" value="Diariamente"> Diariamente</div>
+                <div class="radio"> <input type="radio" name="alcool" value="Semanalmente"> Semanalmente</div>
+                <div class="radio"> <input type="radio" name="alcool" value="Mensalmente"> Mensalmente</div>
+                <div class="radio"><input type="radio" name="alcool" value="Raramente"> Raramente</div>
+                <div class="radio">  <input type="radio" name="alcool" value="Nunca"> Nunca</div></div>
+          
+            
+            <div class="campo"><label>Você realiza check-ups médicos regulares?</label>
+                <div class="radio"><input type="radio" name="checkup" value="Anualmente"> Anualmente</div>
+                <div class="radio"> <input type="radio" name="checkup" value="A cada 2 anos"> A cada 2 anos</div>
+                <div class="radio"><input type="radio" name="checkup" value="Raramente"> Raramente</div>
+                <div class="radio"><input type="radio" name="checkup" value="Nunca"> Nunca</div></div>
+            
+            
+            <div class="campo"><label for="saude_mental">Você tem algum problema de saúde mental diagnosticado?
+                <input type="text" name="saude_mental" id="saude_mental" placeholder="Se sim, especifique:" />
+            </label></div>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Sintomas ou Queixas Atuais</legend>
+            <div class="campo"><label>Descreva seus sintomas ou queixas atuais:</label>
+            <textarea name="sintomas" rows="4" cols="50"></textarea></div>
+            
+        </fieldset>
+        <div class="botoes">
+            <button type="reset">Limpar</button>
+            <button type="submit">Salvar Cadastro</button>
+        </div>
+        
+    </form>
+    <div id="mensagemSucesso">
+        <h2>Cadastro enviado com sucesso!</h2>
+    </div>
+</main>
+<footer>
+    <p>&copy; 2025 Saúde+. Todos os direitos reservados.</p>
+</footer>
+    <script>
+        const form = document.querySelector("form");
+        form.addEventListener("submit", event => {
+            event.preventDefault();
+
+            const formData = new FormData(form);
+            const json = {};
+
+            formData.forEach((value, key) => {
+                json[key] = value;
+            });
+            fetch("https://crudcrud.com/api/ab4e9e85f2a642a98a8c70b15d67bc0f/pacientes", {
+                method: 'POST',
+                body: JSON.stringify(json),
+                headers: {
+                    "Content-Type": "application/json"
+                },
+            }).then(response => {
+                if (response.ok) {
+                    form.style.display = "none";
+                    mensagemSucesso.style.display = "block";
+                }
+        });
+    });
+    </script>
+</body>
+
+</html>

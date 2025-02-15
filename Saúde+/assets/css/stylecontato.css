@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+} */
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+img {
+    position: absolute;
+    margin-left: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+fieldset {
+    border-radius: 16px;
+    padding: 12px 24px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 16px;
+    width: 100%;
+    row-gap: 24px;
+}
+
+legend {
+    font-size: .875rem;
+    color:#5e5e5e
+}
+
+button {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    /* font-weight: bold; */
+    letter-spacing: 0.3px;
+}
+
+form {
+    display: flex;
+    /* flex-direction: row; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 12px;
+    width: 60%;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+button[type="reset"] {
+    background-color: transparent;
+    border: 1px solid #45a049;
+    color: #45a049;
+}
+
+button[type="reset"]:hover {
+    background-color: #f2f2f2;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    display: block;
+}
+
+input[type="radio"] {
+    display: inline;
+}
+
+.radio {
+    display: inline;
+    margin-right: 12px;
+    font-size: .875rem;
+}
+
+
+/* .campo {
+    margin-bottom: 16px;
+} */

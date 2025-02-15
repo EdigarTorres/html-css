@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Médico</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/stylepaciente.css">
+    <link rel="stylesheet" href="assets/css/stylecontato.css">
+</head>
+
+<body>
+    <header class="header-verde">
+        <img src="assets/logo.jpg" width="120px" alt="">
+        <h1>Bem-vindo ao Saúde+</h1>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Início</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li><a href="paciente.html">Área do Paciente</a></li> 
+                <li><a href="medico.html">Área do Médico</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container main">
+        <h2>Buscar Paciente</h2>
+        <form id="buscarPacienteForm">
+            <fieldset>
+                <legend>Dados do Paciente</legend>
+                <div class="campo">
+                    <label>CPF: <input type="text" name="cpf" id="cpf" required></label>
+                </div>
+                <div class="botoes">
+                    <button type="submit">Buscar</button>
+                </div>
+            </fieldset>
+        </form>
+        <div id="resultadoBusca"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Saúde+. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const form = document.getElementById('buscarPacienteForm');
+        const resultadoBusca = document.getElementById('resultadoBusca');
+
+        form.addEventListener('submit', event => {
+            event.preventDefault();
+
+            const cpf = document.getElementById('cpf').value;
+
+            fetch(`https://crudcrud.com/api/ab4e9e85f2a642a98a8c70b15d67bc0f/pacientes/${cpf}`, {
+                method: 'GET',
+                headers: {
+                    "Content-Type": "application/json"
+                },
+            }).then(response => response.json())
+              .then(data => {
+                  if (data) {
+                      resultadoBusca.innerHTML = `
+                          <h3>Dados do Paciente</h3>
+                          <p>Nome: ${data.nome}</p>
+                          <p>CPF: ${data.cpf}</p>
+                          <p>Data de Nascimento: ${data.data_nascimento}</p>
+                          <p>Gênero: ${data.genero}</p>
+                          <p>Endereço: ${data.endereco}</p>
+                          <p>Telefone: ${data.telefone}</p>
+                          <p>E-mail: ${data.email}</p>
+                      `;
+                  } else {
+                      resultadoBusca.innerHTML = '<p>Paciente não encontrado.</p>';
+                  }
+              })
+              .catch(error => {
+                  resultadoBusca.innerHTML = '<p>Erro ao buscar paciente.</p>';
+                  console.error('Erro:', error);
+              });
+        });
+    </script>
+</body>
+
+</html>

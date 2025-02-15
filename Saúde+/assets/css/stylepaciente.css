@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #109DB9;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header.contato {
+    background-color: #4CAF50;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+img {
+    position: absolute;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+form fieldset{
+   margin-bottom: .5rem;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+ input,
+ textarea {
+    padding: 5px;
+    border: 1px solid #b7b3b3;
+    border-radius: 5px;
+    margin: 1px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+#mensagemSucesso{
+    display: none;
+}
+footer {
+    background-color: #1F545C;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    bottom: 0;
+}
+

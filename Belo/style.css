@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: darkgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+}
+
+main {
+  background-image: url(assets/images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section_1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 500px;
+  gap: 20px;
+}
+
+.section_2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 500px;
+  gap: 20px;
+}
+
+.card_1 {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 250px;
+  height: 400px;
+  border-radius: 20px;
+}
+
+.card_2 {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 250px;
+  height: 400px;
+  border-radius: 20px;
+}
+
+.card_3 {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 250px;
+  height: 400px;
+  border-radius: 20px;
+}
+
+.card_4 {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 250px;
+  height: 400px;
+  border-radius: 20px;
+}
+
+.card_5 {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 250px;
+  height: 400px;
+  border-radius: 20px;
+}
+
+.card_6 {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 250px;
+  height: 400px;
+  border-radius: 20px;
+}
+
+img {
+  border-radius: 20px;
+}
+
+footer {
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+}
