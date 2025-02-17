@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: "Poppins", Arial, Helvetica, sans-serif ;
+    line-height: 120%;
+}
+
+header {
+    background-color: #111;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+    border-bottom: 1px solid #555;
+
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+ul,
+ol {
+    margin-left: 20px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+.funcao{
+    font-size: 26px;
+}
+
+.habilidades {
+    display: flex;
+    gap: 40px;
+}
+
+.habilidade {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.projetos {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.projeto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.img {
+    width: auto;
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.img:hover {
+    opacity: 0.5;
+}
